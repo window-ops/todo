@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
       var todoClass = todo.done ? "list-group-item list-group-item-action list-group-item-success" : "list-group-item list-group-item-action";
       var todoText = todo.done ? "<del>" + todo.text + "</del>" : todo.text;
       var todoButton = todo.done ? "Not Done" : "Done";
-      document.getElementById("todo-list").innerHTML += '<li class="' + todoClass + ' d-flex align-items-center"><span class="todo-text">' + todoText + '</span><div class="btn-group ms-auto"><button class="btn btn-success done-todo">' + todoButton + '</button><button class="btn btn-danger delete-todo">Delete</button></div></li>';
+      document.getElementById("todo-list").innerHTML += '<li class="' + todoClass + ' d-flex align-items-center justify-content-between"><span class="todo-text">' + todoText + '</span><div class="btn-group"><button class="btn btn-success done-todo">' + todoButton + '</button><button class="btn btn-danger delete-todo">Delete</button></div></li>';
     }
   }
 
